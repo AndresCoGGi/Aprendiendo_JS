@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Document object Model</title>
+</head>
+<body>
+
+      <h1 id="titulo">Titulo de la paina WEB</h1>
+       <div id="subtitulo"></div>
+      <p>1. El presente <b>documento</b> contiene una actividad grupal que permite
+      acercar al estudiante a los métodos de búsqueda no informados,
+      facilitando su comprensión.</p>
+
+      <p id="segundo">2.Fortalecer los conceptos relacionados con definición del espacio de
+      estados y búsquedas no informadas, a través de la realización de un ejercicio
+      grupal.</p>
+
+      <p>3. A continuación, se entregará un ejercicio, del cual deberán construir
+      un informe acerca de la manera en que se desarrolla la solución.
+      Deben entregar un documento digital que contenga el desarrollo.</p>
+     <script>
+         var elementosP = document.getElementsByTagName("p");
+         var SegundoParrafo = document.getElementById('segundo')
+
+         //crear elemento o nodo en una pagina
+
+         //1.-Crear el elemneto
+         var elemento = document.createElement("h2");
+         //2.-crear un  nodo de texto
+         var contenido=document.createTextNode("Este es nuestro titular");
+         //3.-Añadir el nodo de texto al elemento
+         elemento.appendChild(contenido);
+         //4.-agregar atributos al elemento
+         elemento.setAttribute("align","center");
+         //5.-agregar el elemnto al documento
+         document.getElementById("subtitulo").appendChild(elemento);
+
+
+     </script>
+
+ </body>
+</html>

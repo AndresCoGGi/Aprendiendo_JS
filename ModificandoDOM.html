@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Document Object Model</title>
+</head>
+<body>
+  <ol id="lista">
+      <li id="Primero">Nacional <b>es</b> el mejor</li>
+      <li>Rey de copas</li>
+  </ol>
+  <script>
+       //var PrimerElemento = document.getElementById("Primero");
+       //modificar conenido de los elementos
+       //PrimerElemento.innerHTML="Nuevo Texto";
+
+       var elemento = document.createElement("li"),
+           contenido=document.createTextNode("Nuevo Texto");
+
+      elemento.appendChild(contenido);
+      var padre = document.getElementsByTagName("li")[0].parentNode,
+       referencia=document.getElementsByTagName("li")[0];
+
+      //reemplazar elementos
+      //padre.replaceChild(elemento,referencia);
+
+      //eliminar elementos
+      padre.removeChild(referencia);
+
+
+
+      //Modificar un elemento y agregarlo
+     //  var padre = document.getElementsByTagName("li")[0].parentNode; //es igual a : var padre = document.getElementById("lista");
+     //  var PrimerElemento = document.getElementsByTagName("li")[0];
+    //  padre.insertBefore(elemento,PrimerElemento);
+
+
+  </script>
+
+</body>
+</html>

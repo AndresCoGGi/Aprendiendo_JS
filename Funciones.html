@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Funciones</title>
+</head>
+<body>
+    <script>
+
+      function NumeroMaximo(valor1,valor2){
+           if(valor1>valor2){
+             return valor1;
+           }else if(valor2>valor1){
+             return valor2;
+           }else{
+             return 0;
+           }
+
+      }
+      var Max=0;
+      Max=NumeroMaximo(30,80);
+      if(Max==0){
+        document.write("Los Numeros son Iguales");
+      }else{
+        document.write("El numero maximo es "+Max);
+      }
+
+
+
+      //se recomienda que las funciones retornen valores
+       /*function suma(Num1,Num2){
+         var Res;
+         Res=Num1+Num2;
+         document.write(Res);
+       }*/
+
+
+       /*function suma(Num1,Num2){
+              var Res;
+              Res=Num1+Num2;
+              return Res;
+       }
+       var Resultado=0;
+       var Resultado2=0;
+       Resultado=suma(12,5);
+       Resultado2=suma(12,8);
+
+       document.write(Resultado);
+       document.write("<br>");
+       document.write(Resultado2);*/
+
+        //function saludo(nombre){
+            //instrucciones
+          //  document.write("Hola Buen Dia"+nombre);
+
+      //  }
+        //saludo(" Andres");
+
+
+
+    </script>
+
+
+
+</body>
+</html>
